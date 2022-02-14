@@ -10,11 +10,20 @@ $jsonMarvel = file_get_contents("http://gateway.marvel.com/v1/public/characters?
   foreach ($heros as $hero){
     
     
-    print_r(
-      '<img src='.$hero->thumbnail->path.'.'.$hero->thumbnail->extension.' alt="" width="500" height="600">'.'<br>'.
-      $hero->name.'<br>'.'<br>'.
-      $hero->description.'<br>'.'<br>'
-    
-      );
-  }
+  echo(
+      '<div class="card mb-1 mx-1 shadow rounded">
+        <img src='.$hero->thumbnail->path.'.'.$hero->thumbnail->extension.' class="card-img-top" alt="">
+        <div class="card-body bg-danger text-center">
+        <h3>'.$hero->name.'</h3>
+        <p class="card-text">'.$hero->description.'</p>
+        </div>
+      </div>'
+      
+
+    );
+      
+  };
+  
+  
+  ?>
   
