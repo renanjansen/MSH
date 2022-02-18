@@ -11,7 +11,7 @@
         <a class="nav-link" href="#">Features</a>
         <a class="nav-link" href="#">Characters</a>
       </div>
-      <form class="d-flex" method="POST" action="heros.php" enctype="multipart/form-data">
+      <form class="d-flex" method="POST" action="busca.php" enctype="multipart/form-data">
         <input id="busca" name="busca" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
